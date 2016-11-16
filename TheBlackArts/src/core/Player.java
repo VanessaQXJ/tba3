@@ -1,7 +1,3 @@
-/*
- *  A player is the primary user of The Black Arts game.
- */
-
 package core;
 
 import java.util.ArrayList;
@@ -16,7 +12,7 @@ public class Player {
     // Each player has one deck
     Deck deckManager = new Deck();
     private ArrayList<Card> deck =
-    		deckManager.buildDeckOfHalfGoldAndHalfBears("Bears and Gold");
+    		deckManager.buildAccessoryDeck("Bears and Gold");
     
     // Each player has one hand
     private ArrayList<Card> hand = new ArrayList<Card>(OPENINGHANDSIZE);

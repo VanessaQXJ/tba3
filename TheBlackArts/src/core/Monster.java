@@ -2,7 +2,7 @@ package core;
 
 public class Monster extends Card {
     
-    // Data fields
+	// Data fields
     private String cardType = "Monster";
     private int attack = 0;
     private int hitPoints = 1;
@@ -12,6 +12,8 @@ public class Monster extends Card {
     public Monster() {
         
     }
+    
+    //Test 
     
     public Monster(String name, int attack, int hitPoints) {
         super.setCardName(name);

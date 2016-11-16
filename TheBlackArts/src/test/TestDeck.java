@@ -9,6 +9,8 @@ public class TestDeck {
 	public static void main(String[] args) {
 		Deck deck = new Deck();
 		deck.buildDeckOfHalfGoldAndHalfBears("Bears and Gold");
+		//deck.buildMyDeck("Action");
+		deck.buildAccessoryDeck("Accessory");
 		System.out.println(deck.getDeckName() + " is a deck of " + deck.getDeck().size() + " cards.");
 		ArrayList<Card> gameDeck = deck.getDeck();
 		deck.shuffleDeck(gameDeck);

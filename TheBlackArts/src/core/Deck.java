@@ -33,19 +33,53 @@ public class Deck {
      */
     public ArrayList<Card> buildDeckOfHalfGoldAndHalfBears(String deckName) {
     	
-    	deck = new ArrayList<Card>(DECKSIZE);
+    	deck = new ArrayList<Card>(4);
     	this.deckName = deckName;
     	
-    	// Half the deck is made of Gold cards
-    	for (int i = 0, n = DECKSIZE / 2; i < n; i++) {
+    	// Half the deck is made of 26 Gold cards
+    	for (int i = 0, n = 4; i < n; i++) {
             deck.add(new Gold());
         }
         
-    	// The other half of the deck is made of Bear Cards
+    	// The other half of the deck is made of 26 Bear Cards
         for (int i = 0, n = DECKSIZE / 2; i < n; i++) {
             deck.add(new Monster("Bear", 10, 10, 2));
         }
+        
+
         return deck;
+    }
+   // make new method
+    
+    public ArrayList<Card> buildMyDeck(String deckName){
+    	deck = new ArrayList<Card>(10);
+    	this.deckName = deckName;
+    	for (int i = 0, n = 10; i < n; i++ )
+        {
+        	deck.add(new Action("rush",7,3));
+        }
+    	return deck;
+    	
+    }
+    //new
+    public ArrayList<Card> buildAccessoryDeck(String deckName){
+    	deck = new ArrayList<Card>(52);
+    	this.deckName = deckName;
+
+    	
+    	// Half the deck is made of 26 Gold cards
+    	for (int i = 0, n = 20; i < n; i++) {
+            deck.add(new Gold());
+        }
+    	for (int i = 0, n = 16; i < n; i++ )
+        {
+        	deck.add(new Accessory("DarkShield",0,1,1));
+        }
+    	for (int i = 0, n = 16; i < n; i++ )
+        {
+        	deck.add(new Accessory("Ancient Tomb",10,0,2));
+        }
+    	return deck;
     }
 
     public String getDeckName() {

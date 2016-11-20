@@ -73,11 +73,11 @@ public class Deck {
         }
     	for (int i = 0, n = 16; i < n; i++ )
         {
-        	deck.add(new Accessory("DarkShield",0,1,1));
+        	deck.add(new Accessory("DarkShield",1));
         }
     	for (int i = 0, n = 16; i < n; i++ )
         {
-        	deck.add(new Accessory("Ancient Tomb",10,0,2));
+        	deck.add(new Accessory("Ancient Tomb",2));
         }
     	return deck;
     }

@@ -51,7 +51,7 @@ public class Deck {
     }
    // make new method
     
-    public ArrayList<Card> buildMyDeck(String deckName){
+    /*public ArrayList<Card> buildMyDeck(String deckName){
     	deck = new ArrayList<Card>(10);
     	this.deckName = deckName;
     	for (int i = 0, n = 10; i < n; i++ )
@@ -60,7 +60,7 @@ public class Deck {
         }
     	return deck;
     	
-    }
+    }*/
     //new
     public ArrayList<Card> buildAccessoryDeck(String deckName){
     	deck = new ArrayList<Card>(52);

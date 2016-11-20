@@ -12,7 +12,7 @@ public Accessory(String name, int goldCost) {
         	Scanner input = new Scanner(System.in);
     		Card cards;
 //
-    		//111
+    		//111m
         	if(game.getTotalTurns() % 2 == 0){
         		ArrayList<Card> playerTwoInPlayZone = game.getPlayerTwoInPlayZone();
         		System.out.println("select a CARD you want to remove: ");

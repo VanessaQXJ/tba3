@@ -66,7 +66,6 @@ public class Deck {
     	deck = new ArrayList<Card>(52);
     	this.deckName = deckName;
 
-    	
     	// Half the deck is made of 26 Gold cards
     	for (int i = 0, n = 20; i < n; i++) {
             deck.add(new Gold());
@@ -74,9 +73,6 @@ public class Deck {
     	for (int i = 0, n = 16; i < n; i++ )
         {
         	deck.add(new Accessory("DarkShield",1));
-        }
-    	for (int i = 0, n = 16; i < n; i++ )
-        {
         	deck.add(new Accessory("Ancient Tomb",2));
         }
     	return deck;

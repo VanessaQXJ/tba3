@@ -15,7 +15,8 @@ public class TestAccessory {
 		System.out.println(deadZone);
 		
 		Accessory accessory = new Accessory ("Ancient Tomb",2);
-		
+
+		Accessory accessory1 = new Accessory ("DarkShield",1);
 		accessory.removeACard(inPlayZone, deadZone);
 		System.out.println(inPlayZone);
 		System.out.println(deadZone);

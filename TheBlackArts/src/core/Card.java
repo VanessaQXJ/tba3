@@ -17,11 +17,9 @@ package core;
 public class Card {
     
     private String cardName = "Default Card Name.";
-    private String cardBodyText = "Default Card Body Text.";													
-    private String ActCardSpeed = "Default Card Speed";
+    private String cardBodyText = "Default Card Body Text.";
     private int goldCost = 0;
-    private int loseHP = 1;
-	private int gainHP = 1;
+	private int hitPoints;
     // Getters and setters
     public String getCardName() {
 		return cardName;
@@ -56,19 +54,14 @@ public class Card {
         this.cardName = name;
         this.cardBodyText = body;
     }
-    public void setgainHP(int gainHP){
-    	this.gainHP = gainHP;
-    }
-    public int getgainHP(){
-    	return gainHP;	
-    }
-    //
-    public void setloseHP(int loseHP){
-    	this.loseHP = loseHP;
-    }
-    public int getloseHP(){
-    	return loseHP;	
+   
+    public void setHitPoints(int hitPoints){
+    	this.hitPoints = hitPoints;
     }
     
+    public int getHitPoints(){
+    	return hitPoints;	
+    }
+
     
 }
